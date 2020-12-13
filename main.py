@@ -38,8 +38,8 @@ async def auth_cliente(cliente_in: clienteIn):
 
 
 
-@api.get("/user/totalproductos/{username}")
-async def get_totalproductos(username: str):
+@api.get("/user/cantproductos/{username}")
+async def get_cantproductos(username: str):
     
     cliente_in_db = get_cliente(username)
 

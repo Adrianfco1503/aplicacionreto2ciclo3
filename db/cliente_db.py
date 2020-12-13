@@ -3,16 +3,16 @@ from pydantic import BaseModel
 class clienteInDB(BaseModel):
     username: str
     password: str
-    totalproductos: float
+    cantproductos: int
 
 database_cliente = Dict[str, clienteInDB]
 database_cliente = {
     "adrian15": clienteInDB(**{"username":"adrian15",
                             "password":"12345",
-                            "totalproductos":12000}),
+                            "cantproductos":12}),
     "maria16": clienteInDB(**{"username":"maria16",
                             "password":"mar123",
-                             "totalproductos":34000}),
+                             "cantproductos":33}),
 }
 
 def get_cliente(username: str):

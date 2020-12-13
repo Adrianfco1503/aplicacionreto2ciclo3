@@ -4,4 +4,4 @@ class clienteIn(BaseModel):
     password: str
 class clienteOut(BaseModel):
     username: str
-    totalproductos: float
+    cantproductos: int
